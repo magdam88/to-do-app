@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #00B5B5;
+    font-family: Oswald;
+}
+
+.container {
+    padding: 4em;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 3.5em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#input {
+    background-color: #00B5B5;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    width: 100%;
+    font-size: 2em;
+    font-family: Oswald;
+    font-weight: 300;
+    color: #fff;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #fff;
+}
+
+#btn-add {
+    position: absolute;
+    right: 2em;
+    top: 1em;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.fa.fa-plus {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+#todo-list li,
+#completed-list li {
+    background-color: #fff;
+    margin: 1em 0;
+    padding: 1.5em;
+    border-radius: 10px;
+    position: relative;
+}
+
+#completed-list .completed {
+      color: #2ecc71;
+}
+
+#completed-list .delete:hover,
+#completed-list .edit:hover {
+    color: #d0d0d0;
+}
+
+#completed-list label {
+color: #d0d0d0;
+}
+
+.list-heading {
+  background-color: #00B5B5;
+  padding: 1em 0;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  width: 100%;
+  font-size: 2em;
+  font-family: Oswald;
+  font-weight: 300;
+  color: #fff;
+}
+
+.buttons {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+i.fa {
+    font-size: 2em;
+    margin: 0.2em;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding: 0;
+    color: #d0d0d0;
+}
+
+.delete:hover {
+    color: #e74c3c;
+}
+
+.edit:hover {
+    color: #3498db
+}
+
+.completed:hover {
+    color: #2ecc71;
+}
+
+ul li input {
+  display: none;
+}
+
+ul li.editItem input,
+ul li.editItem button {
+  display: inline-block;
+  font-size: 0.9em;
+  font-weight: 500;
+  font-family: Oswald;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 0.5em;
+}
+
+ul li.editItem label {
+  display: none;
+}
+
+.save-button {
+ display: none;
+ background-color: #00B5B5;
+ color: #fff;
+}
